@@ -6,7 +6,7 @@ import shap
 import pandas as pd
 import matplotlib.pyplot as plt
 # Load the new model
-model = joblib.load ('XGBoost.pkl')
+model = joblib.load ('LightGBM.pkl')
 # Load the test data from X_test.csv to create LIME explainer
 X_test = pd.read_csv('clinic.csv')
 # Define feature names from the new dataset
